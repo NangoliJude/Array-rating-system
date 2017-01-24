@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title> Learn </title>
+</head>
+
+<body>
+<script> 
+//Created by Nangoli Jude Eric
+   
+   
+"use strict"
+
+ var rap = [
+              {
+				  name: "kanye",
+				  age:   40,
+				  rate:  45
+				  },
+				  {
+					  
+				  name: "50cents",
+				  age:   25,
+				  rate:  60
+				  },
+				  {
+				  name: "Lil wayn",
+				  age:   43,
+				  rate:  90
+				  },
+				  {
+				  name: "shaba",
+				  age:   10,
+				  rate:  78
+				  },
+				  {
+				  name: "Jude",
+				  age:   30,
+				  rate:  100}
+				  ];
+				  
+rap.sort(function(a,b){
+	if (a.rating>b.rate)
+	   {
+		return -1//A should be first
+		}
+		if(b.rate> a.rate){
+		return 1; //B should be first	
+			}
+			return 0;
+	})
+	document.write(JSON.stringify(rap, null, 4));
+</script>
+
+    
+ </body>
+</html>
